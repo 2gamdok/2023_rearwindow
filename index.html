@@ -28,11 +28,11 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            padding: 50px;
+            padding: 20px;
             background-color: rgba(255, 255, 255, 0.7);
         }
         .poster h1 {
-            font-size: 8.0em;
+            font-size: 4.0em;
             font-weight: bold;
             color: #343a40;
             text-shadow: 3px 3px 6px #bbb, 0 0 10px #00ffff, 0 0 5px #00ffff;
@@ -63,6 +63,22 @@
         }
         @keyframes blinker {  
             50% { opacity: 0.5; }
+        }
+        /* 모바일용 스타일 */
+        @media only screen and (max-width: 768px) {
+            .poster {
+                padding: 10px;
+            }
+            .poster h1 {
+                font-size: 2.0em;
+            }
+            .poster h2,
+            .poster h3,
+            .poster h4,
+            .poster h5,
+            .poster p {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
